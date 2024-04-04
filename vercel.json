@@ -11,5 +11,8 @@
         "src": "/(.*)",
         "dest": "server.py"
       }
-    ]
+    ],
+    "env": {
+      "FLASK_ENV": "production"
+    }
   }
