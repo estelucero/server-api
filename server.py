@@ -30,13 +30,13 @@ def message():
   return jsonify(data)
 
 if __name__ == '__main__':
-    host = get_local_ip()
-    user_input = input("Ingrese ip (enter for default " + host + "): ")
-    if (user_input != ""):
-      host = user_input
+    # host = get_local_ip()
+    # user_input = input("Ingrese ip (enter for default " + host + "): ")
+    # if (user_input != ""):
+    #   host = user_input
 
-    user_input = input("Ingrese port (enter for default 5000): ")
-    port = int(user_input) if user_input != "" else 5000
+    # user_input = input("Ingrese port (enter for default 5000): ")
+    # port = int(user_input) if user_input != "" else 5000
 
 #    app.run(host, port)
     app.run()
