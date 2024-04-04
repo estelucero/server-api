@@ -1,3 +1,8 @@
+from flask import Flask, jsonify, request
+from chatbot import answer_message
+
+app = Flask(__name__)
+
 @app.route('/api/chatbot', methods=['POST'])
 def chatbot():
     data = request.get_json()
