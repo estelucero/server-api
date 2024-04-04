@@ -3,7 +3,7 @@ from chatbot import answer_message
 
 app = Flask(__name__)
 
-@app.route('/api/chatbot', methods=['POST'])
+@app.route('/chatbot', methods=['POST'])
 def chatbot():
     data = request.get_json()
     user_message = data['message']
